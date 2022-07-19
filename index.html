@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTC-8">
+        <link rel="stylesheet" href="style.css">
+        <title>IMC Calculator</title>
+    </head>
+
+    <body>
+        <div id="titre">
+            <h2>Je calcule mon IMC</h2>
+            <p>Cet indicateur est à titre informatif, veuillez vous rapprocher de spécialistes pour toutes questions relatives au résultat.</p>
+        </div>
+
+        <div>
+            <div id="left">
+                <form action="">
+                    <div>
+                        <h4>Veuillez entrer votre poids</h4>
+                        <input id="poids" type="number" placeholder="Votre poids ici en kg"> 
+                    </div>
+
+                    <br>
+                    <div>
+                        <h4>Veuillez entrer votre taille </h4>
+                        <input id="taille" type="number" placeholder="Votre taille ici en cm">  
+                    </div>
+
+                    <br><br><br>
+                    <div>
+                        <button type="button" id="submit">Voir son IMC</button>
+                    </div> 
+                </form>
+            </div>
+
+            <div id="right">
+                <h3>Je découvre mon IMC, et j'analyse :</h3>
+                <p id="noData">Aucune donnée n'a été validé, <br> rempli le formulaire pour tout savoir !</p>
+                <div id="result">
+
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>! Le plus important est de se sentir bien! <br> Si votre IMC est trop élevé mais que vous ne voyez pas un impact négatif sur votre façon de vivre, alors ne changez rien! <br> Vous êtes parfait! </p>
+        </footer>
+
+        <script src="index.js"></script>
+    </body>
+</html>
