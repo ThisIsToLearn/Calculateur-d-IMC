@@ -18,9 +18,9 @@ function calculateIMC(){
     else {
         let IMC = Math.round(poids /((taille*taille)/10000));
         
-        if(IMC<18.5)
-            result.innerHTML = `Insuffisance pondérale: votre IMC est de <span>${IMC}</span>`;
-        if (18.5<IMC<25)
+        if (IMC<18.5)
+            result.innerHTML = `Insuffisance pondérale: votre IMC est de <span> ${IMC}</span>`;
+        if (18.5<IMC && IMC<25)
             result.innerHTML = `Normal: votre IMC est de <span> ${IMC}</span>`;
         if (IMC>25)
             result.innerHTML = `Surpoids: votre IMC est de <span> ${IMC}</span>, attiontion, si votre IMC dépasse 40, vous êtes en obésité morbide.`;
